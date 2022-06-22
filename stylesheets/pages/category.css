@@ -1,1 +1,308 @@
 /* 카테고리별 추천 광고상품 */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 48px;
+  width: 1020px;
+  height: 1378px;
+}
+
+section header {
+  margin-bottom: 25px;
+}
+
+section header h4 {
+  margin: 0px;
+}
+
+section header div {
+  display: flex;
+}
+
+section header h2 {
+  margin: 0px;
+}
+
+section header div h2:first-child {
+  margin-right: 10px;
+}
+
+section header div h2:nth-child(2) {
+  color: var(--color-blue-600);
+}
+
+article {
+  display: flex;
+  margin-bottom: 25px;
+  width: 1020px;
+  height: 633px;
+}
+
+.first_article {
+  border-top: 1px solid var(--color-brown-300);
+  border-bottom: 1px solid var(--color-brown-300);
+}
+
+nav {
+  padding: 46.83px 0px 0px 22px;
+  width: 172px;
+}
+
+.nav_title h2 {
+  color: var(--color-brown-300);
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
+.nav_title_bot {
+  display: flex;
+  align-items: center;
+}
+
+.nav_title_bot p {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-gray-700);
+  margin: 0px 4px 0px 0px;
+}
+
+.nav_title_icon {
+  margin-top: 1.5px;
+  width: 6px;
+  height: 10px;
+  background-image: url("/assets/icon/angle-right-default.svg");
+}
+
+.nav_footer {
+  margin-top: 248px;
+}
+
+.nav_footer p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.nav_footer div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  border: 1px solid var(--color-gray-1000);
+  width: 72px;
+  height: 26px;
+  color: var(--color-brown-300);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.nav_footer div:nth-child(n + 2) ~ :nth-child(-n + 5) {
+  width: 94px;
+  height: 26px;
+}
+
+.nav_footer div:last-child {
+  width: 117px;
+  height: 26px;
+}
+
+aside {
+  width: 320px;
+  height: 631px;
+  margin-bottom: 1px;
+  overflow: hidden;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel_indicator button:first-child {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 597px;
+  left: 144px;
+  background-color: var(--color-gray-700);
+  border: none;
+  z-index: 1;
+}
+
+.carousel_indicator button:nth-child(2) {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 597px;
+  right: 144px;
+  background-color: var(--color-gray-600);
+  border: none;
+  z-index: 1;
+}
+.carousel_list {
+  display: flex;
+}
+
+.carousel_list_item {
+  position: relative;
+}
+
+.aside_text {
+  position: absolute;
+  left: 30px;
+  top: 483px;
+  width: 260px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-brown-300);
+  color: var(--color-white);
+}
+
+.aside_text p:first-child {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 19px 0px 8px 0px;
+}
+
+.aside_text p:nth-child(2) {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 5px 0px 10px 0px;
+  width: 215px;
+  height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  margin: 8px 0px 0px 16px;
+}
+
+.product_container {
+  width: 160px;
+  height: 300px;
+  margin-right: 16px;
+}
+
+.product_container:last-child {
+  margin-right: 0px;
+}
+
+.product_container img {
+  width: 160px;
+  height: 160px;
+}
+
+.hair_oil {
+  width: 152px;
+  height: 51px;
+}
+
+.product_container_footer > p:first-child {
+  width: 152px;
+
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-black);
+  margin: 12px 0px;
+}
+
+.product_container_footer > p:nth-of-type(2) {
+  color: var(--color-red-500);
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0px 0px 4px 0px;
+}
+
+.product_price {
+  display: flex;
+  align-items: center;
+}
+
+.product_price_text {
+  display: flex;
+  align-items: flex-end;
+  margin-right: 8px;
+}
+
+.product_price p {
+  margin: 0px;
+}
+
+.product_price img {
+  width: 60px;
+  height: 20px;
+}
+
+.product_price p {
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.kitchen h2 {
+  color: var(--color-green-700);
+}
+
+.kitchen_footer div {
+  color: var(--color-green-700);
+}
+
+.kitchen_footer div:first-child {
+  width: 83px;
+  height: 26px;
+}
+
+.kitchen_footer div:nth-child(2) {
+  width: 106px;
+  height: 26px;
+}
+
+.kitchen_footer div:nth-child(n + 2) ~ :nth-child(-n + 6) {
+  width: 61px;
+  height: 26px;
+}
+
+.second_article {
+  border-top: 1px solid var(--color-green-700);
+  border-bottom: 1px solid var(--color-green-700);
+  margin-bottom: 0px;
+  height: 634px;
+}
+
+.second_article aside {
+  margin-bottom: 2px;
+}
+
+.kitchen_aside_text {
+  background-color: var(--color-green-700);
+}
+
+.line::after {
+  content: "";
+  border-bottom: 1px solid var(--color-gray-600);
+  width: 528px;
+  display: block;
+}
+
+.screen_reader {
+  position: absolute;
+  overflow: hidden;
+  padding: 0;
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+}
