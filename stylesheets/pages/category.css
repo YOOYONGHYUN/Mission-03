@@ -306,3 +306,16 @@ aside {
   height: 1px;
   clip: rect(0, 0, 0, 0);
 }
+
+.line {
+  position: relative;
+}
+
+.line::after {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  content: "";
+  width: 528px;
+  background-color: var(--color-gray-600);
+}
